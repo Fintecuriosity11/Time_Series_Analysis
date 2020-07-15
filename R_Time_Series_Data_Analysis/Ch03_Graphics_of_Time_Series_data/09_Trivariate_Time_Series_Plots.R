@@ -25,6 +25,9 @@ autopairs(log(lynx),type = "levels")
 
 
 # lags 가 사용되지 않은 인자라고 함.
+# 에러 검색 요망. 
+# R "tsDyn" 패키지 메뉴얼 확인중
+
 
 # autopairs(log(lynx), lags=0:1, type = "levels")
 # autopairs(log(lynx), lags=0:2, type = "levels")
