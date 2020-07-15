@@ -14,25 +14,26 @@
 # 시계열 자료를 대상으로, 2개의 Time Lag에 따른 "Bivariate Time Series Plots"를 작성.
 
 
-.libPaths("C://Users//yjang//R")                                              # 저장 디렉토리 및 lib 경로 설정.
+.libPaths("C://Users//yjang//R")                                                                # 저장 디렉토리 및 lib 경로 설정.
 
 install.packages("tsDyn")
+install.packages("sm")
+
+library(tsDyn)
 
 (xx<-lynx)
 
+autopairs(xx, type="levels")
+autopairs(xx, type="persp")
+autopairs(xx, type="image")
+autopairs(xx, type="lines")
+autopairs(xx, type="points")
+autopairs(xx, type="regression")
+
 # autopair가 패키지 문제로 안돌아감. 다시 확인 필요.
-
-autopair(xx, type="levels")
-autopair(xx, type="persp")
-autopair(xx, type="image")
-autopair(xx, type="lines")
-autopair(xx, type="points")
-autopair(xx, type="rergession")
-
-
+# levels를 수행하려면 추가 패키지 "sm" 설치 및 로딩 확인 요망.
 
 graphics.off()                                                                                         # 그래프를 지워주는 함수.
-
 
 
 ############################################################(패키지 설치확인)#############################################################
