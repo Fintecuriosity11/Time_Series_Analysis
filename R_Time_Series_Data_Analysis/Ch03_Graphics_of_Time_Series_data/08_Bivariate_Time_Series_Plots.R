@@ -35,6 +35,29 @@ autopairs(xx, type="regression")
 
 graphics.off()                                                                                         # 그래프를 지워주는 함수.
 
+############################################################(에러)########################################################################
+
+# > autopairs(xx, type="levels")
+# Error in loadNamespace(name) : there is no package called ‘sm’
+# > install.packages("sm")
+# WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+#   
+#   https://cran.rstudio.com/bin/windows/Rtools/
+#   Installing package into ‘C:/Users/yjang/Documents/R/win-library/4.0’
+# (as ‘lib’ is unspecified)
+# URL 'https://cran.rstudio.com/bin/windows/contrib/4.0/sm_2.2-5.6.zip'을 시도합니다
+# Content type 'application/zip' length 1172334 bytes (1.1 MB)
+# downloaded 1.1 MB
+# 
+# package ‘sm’ successfully unpacked and MD5 sums checked
+# 
+# The downloaded binary packages are in
+# C:\Users\yjang\AppData\Local\Temp\RtmpkfUi5K\downloaded_packages
+# > autopairs(xx, type="levels")
+# > autopairs(xx, type="persps")
+# Error in match.arg(type) : 
+#   'arg' should be one of “levels”, “persp”, “image”, “lines”, “points”, “regression”
+
 
 ############################################################(패키지 설치확인)#############################################################
 
